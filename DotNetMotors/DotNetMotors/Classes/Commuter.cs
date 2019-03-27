@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class Commuter : Car
+    public class Commuter : Car, IReverseGear, IAllWheelDrive
     {
         public override bool Drive()
         {
@@ -27,6 +27,18 @@ namespace DotNetMotors.Classes
         public bool CauseTraffic()
         {
             Console.WriteLine("Standby while I cause an accident");
+            return true;
+        }
+
+        public bool DriveBackwards()
+        {
+            Console.WriteLine("Goin Backward Beep");
+            return true;
+        }
+
+        public bool UseAllWheels()
+        {
+            Console.WriteLine("More Traction!");
             return true;
         }
     }

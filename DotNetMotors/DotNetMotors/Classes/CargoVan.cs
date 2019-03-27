@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class CargoVan : Van
+    public class CargoVan : Van, IReverseGear
     {
         bool LadderRack;
 
@@ -17,6 +17,12 @@ namespace DotNetMotors.Classes
         public override bool Drive()
         {
             Console.WriteLine("Vroom Vroom");
+            return true;
+        }
+
+        public bool DriveBackwards()
+        {
+            Console.WriteLine("Beep beep beep beeep beeep");
             return true;
         }
 
