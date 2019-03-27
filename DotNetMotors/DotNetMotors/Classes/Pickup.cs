@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Pickup : Truck
+    public class Pickup : Truck
     {
         bool Canopy;
 

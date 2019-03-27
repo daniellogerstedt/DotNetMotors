@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Racecar : Car
+    public class Racecar : Car
     {
         public override bool Drive()
         {
