@@ -4,7 +4,9 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Truck
+    public abstract class Truck : HeavyFrame
     {
+        int BedLength;
+        string DriveType;
     }
 }

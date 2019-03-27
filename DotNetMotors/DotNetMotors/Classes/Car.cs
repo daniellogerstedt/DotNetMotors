@@ -4,7 +4,9 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Car
+    public abstract class Car : LightFrame
     {
+        string TransLocation;
+        int NumberOfDoors;
     }
 }

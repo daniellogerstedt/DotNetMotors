@@ -4,7 +4,8 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class LightFrame
+    public abstract class LightFrame : Vehicle
     {
+        public abstract bool GoFast();
     }
 }
