@@ -4,7 +4,15 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Vehicle
+    public abstract class Vehicle
     {
+        int Wheels;
+        string Engine;
+        string FuelType;
+
+        public abstract bool Drive();
+
+        public abstract bool Honk();
+
     }
 }

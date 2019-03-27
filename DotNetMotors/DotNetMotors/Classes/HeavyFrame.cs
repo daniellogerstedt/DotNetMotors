@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class HeavyFrame
+    public abstract class HeavyFrame
     {
+        public abstract bool Haul();
+
+        public abstract bool ChugFuel();
     }
 }
