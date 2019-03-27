@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public abstract class HeavyFrame
+    public abstract class HeavyFrame : Vehicle
     {
         public abstract bool Haul();
 

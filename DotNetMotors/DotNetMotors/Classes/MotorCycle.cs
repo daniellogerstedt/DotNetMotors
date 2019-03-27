@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class MotorCycle
+    public abstract class MotorCycle : LightFrame
     {
+        public abstract bool Wheelie();
+        public abstract bool LeanRight();
+        public abstract bool LeanLeft();
     }
 }

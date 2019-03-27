@@ -4,7 +4,8 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Van
+    public abstract class Van : HeavyFrame
     {
+        int RoofHeight;
     }
 }
