@@ -95,6 +95,22 @@ namespace TestDotNetMotors
         }
 
         [Fact]
+        public void DriveBackwardCommuter()
+        {
+            Commuter commuter = new Commuter();
+
+            Assert.True(commuter.DriveBackwards());
+        }
+
+        [Fact]
+        public void UseAllWheelsCommuter()
+        {
+            Commuter commuter = new Commuter();
+
+            Assert.True(commuter.UseAllWheels());
+        }
+
+        [Fact]
         public void DriveRacecar()
         {
             Racecar raceCar = new Racecar();
@@ -175,6 +191,22 @@ namespace TestDotNetMotors
         }
 
         [Fact]
+        public void DriveBackwardPickup()
+        {
+            Pickup pickup = new Pickup();
+
+            Assert.True(pickup.DriveBackwards());
+        }
+
+        [Fact]
+        public void UseAllWheels()
+        {
+            Pickup pickup = new Pickup();
+
+            Assert.True(pickup.UseAllWheels());
+        }
+
+        [Fact]
         public void ChugFuelCargoVan()
         {
             CargoVan cargoVan = new CargoVan();
@@ -220,6 +252,14 @@ namespace TestDotNetMotors
             CargoVan cargoVan = new CargoVan();
 
             Assert.True(cargoVan.RaiseLadders());
+        }
+
+        [Fact]
+        public void DriveBackwardCargoVan()
+        {
+            CargoVan cargoVan = new CargoVan();
+
+            Assert.True(cargoVan.DriveBackwards());
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class Pickup : Truck
+    public class Pickup : Truck, IReverseGear, IAllWheelDrive
     {
         bool Canopy;
 
@@ -17,6 +17,12 @@ namespace DotNetMotors.Classes
         public override bool Drive()
         {
             Console.WriteLine("Driving");
+            return true;
+        }
+
+        public bool DriveBackwards()
+        {
+            Console.WriteLine("Backin it up");
             return true;
         }
 
@@ -41,6 +47,12 @@ namespace DotNetMotors.Classes
         public bool RemoveCanopy()
         {
             if (Canopy) Console.WriteLine("No longer have a canopy");
+            return true;
+        }
+
+        public bool UseAllWheels()
+        {
+            Console.WriteLine("Extra Traction!");
             return true;
         }
     }
